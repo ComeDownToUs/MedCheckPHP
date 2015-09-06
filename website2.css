@@ -1,0 +1,425 @@
+body, html
+{
+	color: black;
+	background:grey;
+	text-align: center;
+	font-size: 15px;
+	font-family: Arial, Verdana, sans-serif;
+	margin: 0px auto 0px auto;
+	width:auto;
+	padding:0px;
+	border: 1px solid #000000;
+}
+
+#containerDiv
+{
+	width: 980px;
+	margin: 0px auto 0px auto;
+	background-color: #000;
+	background:#FAFAFA;
+	position: relative;
+}
+
+#header {
+	font: 25px Trebuchet MS ;
+	color: #FAFAFA;
+	margin: 0px auto 0px auto;
+	/*100percent of parent*/
+	width: 100%;
+	height: 75px;
+	padding: 0px;
+	float: top;
+	background: #00CDCD;
+	border: 1px solid none;
+	text-align: center;
+	position:relative;
+
+}
+#tabheader {
+	font: 25px #FAFAFA Trebuchet MS ;
+	margin: 0 auto 0 auto;/*100percent of parent*/
+	margin-left: 140px;
+	height: 30px;
+	padding: 0px;
+	background: #00CDCD;
+	border: 1px solid none;
+	text-align: center;
+	color: white;
+}
+#nav{margin:0; padding:0;
+			}
+	
+		#nav li {
+			list-style: none;
+			float:left;
+			position:relative;
+		}
+		#nav a {
+			background: #00b8b8;
+			color: #FFFFFF;
+			cursor: pointer;
+			display:block;
+			height:100%;
+			line-height: 25px;
+			text-indent: 10px;                   
+			text-decoration:none;
+			width:230px;
+			margin-right: 2px;
+		}
+		#nav a:hover {
+			background-color:#FFA500;
+			text-decoration: bold;
+		}	*/	
+
+#nav ul{
+	z-index: 999; 
+    background:#fff; 
+	background:rgba(255,255,255,0); 
+	list-style:none;
+    position:absolute;
+    left:-9999px;
+}
+#nav ul li{
+    padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float:none;
+	margin-left:-40px;
+}
+#nav ul a{
+    white-space:nowrap; 
+    background: #00b8b8;/* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+    left:0; /* Bring back on-screen when needed */
+}
+#nav li:hover a{/* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    background:#FFA500;
+    text-decoration:bold;
+}
+#nav li:hover ul a{/* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background:#333;
+}		
+		#nav ul{
+			background:#fff;
+			background:rgba(255,255,255,0); 
+			list-style:none;
+			position:absolute;
+			left:-9999px;
+		}
+		#nav ul li{
+			padding-top:1px; 
+			float:none;
+		}
+		#nav ul a{
+			white-space:nowrap;
+		}
+		#nav li:hover ul{
+			left:0;
+		}
+		#nav li:hover a{ background:#e59400;
+    text-decoration:bold;
+}
+
+#nav ul:hover a:hover{ background:#00CDCD;
+    text-decoration:underline;
+}
+#nav li:hover ul a{
+text-decoration:none;
+}
+
+#nav li:hover ul li a{
+    background:#00CDCD;
+}
+#nav li:hover ul li a:hover{
+    background:#e59400;
+}
+
+.circle
+{
+	float: left;
+	width:148px;
+	height:148px;
+	border-radius:148px;
+	/*^This differentiates between a circle and rectangle*/
+	margin-top: -105px;
+	font-size:20px;
+	color:#fff;
+	line-height:100px;
+	text-align:center;
+	background:#DCDCDC;
+	position: absolute;
+	left:0px;
+}
+
+.circle1
+{
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 24px;
+	border-radius:100px;
+	font-size:20px;
+	color:#FAFAFA;
+	line-height:65px;
+	text-align:center;
+	background: black;
+	position: absolute;
+	left:0px;
+}
+
+
+.circle2
+{
+	float: left;
+	width:30px;
+	height:30px;
+	margin: 35px;
+	border-radius:50px;
+	font-size:20px;
+	color:#FAFAFA;
+	line-height:65px;
+	text-align:center;
+	background:#00CDCD;
+	position: absolute;
+	left:0px;
+}
+
+/*Header Layout Complete...Next Div Tags positioning within these*/
+#headerLine
+{
+	color: #FAFAFA;
+	text-align: center;
+	margin-left: 100px;
+	float: left;
+	width: 858px;
+	padding:10px;
+	border: 1px solid none;
+	position: relative;
+}
+.linkholder
+{
+	background:black;
+	color: black;
+	text-align: center;
+	margin-left: 100px;
+	float: right;
+	width: 850px;
+	padding:0px;
+	border: 1px solid none;
+}
+/**********************************************************************/
+#sidecontent 
+{
+	width: 130px;
+	height:auto;
+	float: left;
+	margin:0px;
+	background-color: none;
+	color: #FFF;
+	border: 1px solid none;
+}
+
+#mainContent {
+	width:auto;
+	height:auto;
+	
+}
+
+#clear
+{
+	clear: both;
+}
+
+#base 
+{
+	padding-top: 10px;
+	margin: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #00CDCD;
+	color: white;
+	border-width: 10px;
+	border: 1px solid none;
+	text-align: center; 
+}
+
+.rectangle
+{
+	margin-left:8px;
+	margin-top: 50px;
+	width:120px;
+	border: 2px solid grey;
+	border-radius:25px;
+	font-size:20px;
+	float:left;
+	color: black;
+	line-height:25px;
+	text-align:center;
+	background:none;
+}
+
+.rectangle1
+{	
+	margin-left: 130px;
+	width: 810px;
+	min-height: 500px;
+	background-color: #FAFAFA;
+	border-radius: 20px;
+	margin: 10px;
+	font-size: 20px;
+	float: right;
+	color: #FAFAFA;
+	line-height: 25px;
+	text-align: center;
+	background: #DCDCDC;
+	padding: 10px;
+}
+
+/*Side Bar Filler..................................................*/
+img.QM1pic
+{
+	
+}
+
+.circleCounter
+{
+	font: 30px Trebuchet MS;
+	float: center;
+	margin: 0 auto 0 auto;
+	width:60px;
+	height:60px;
+	border-radius:100px;
+	color:#fff;
+	line-height:60px;
+	text-align:center;
+	background:black;
+	border: 5px solid #DCDCDC;
+}
+/*Main Content Area Stuff..........................................*/
+#warning1
+{
+}
+
+h3
+{
+	font: 12px;
+	text-decoration: bold;
+}
+
+#tabs
+{
+	
+}
+#tableHolder
+{
+	width:auto;
+	height:auto;
+	margin: 10px;
+	font-size:20px;
+	float:center;
+	color:black;
+	line-height:25px;
+	text-align:center;
+	background:#FAFAFA;
+	padding: 20px 10px;
+}
+
+.gridTable
+{
+	text-align: center;
+}
+.patientEntry
+{
+	
+}
+
+.patientForm
+{
+	
+}
+
+.log
+{
+	font-family: Arial, Verdana, sans-serif;
+	width: 650px;
+	font-size: 20px;
+	background: #FFA500;
+	margin: 0 auto 0 auto;
+	color: white;
+} 
+.logcol1{
+	width:200px;
+}
+.logrow
+{
+	color: white;
+}
+.logbutton
+{
+	
+}
+input[type="submit"]{
+	width:100%;
+	font-size:20px;
+}
+
+.info
+{
+	background: #FAFAFA;
+	width: 650px;
+	font-size: 20px;
+	margin: 0 auto 0 auto;
+}
+.infoheader
+{
+	background: #00CDCD;
+	color: white;
+}
+.infocol1
+{
+	background: grey;
+	color: white;
+}
+.infocol2
+{
+	width:500px;
+	background: white;
+	color: black;
+}
+.infocol3
+{
+	width:350px;
+	background: grey;
+	color: white;
+}
+.infocol4
+{
+	background: white;
+	color: black;
+}
+	
+.dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+.dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	
+.alertrow{
+	background: red;
+	color: white;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+	}
+h4{
+	font-size:12px;
+}
